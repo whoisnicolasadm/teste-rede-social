@@ -11,7 +11,7 @@ const schema = require('./schema/usuarios.js');
 const videosDb = require('./schema/videos.js');
 
 mg.set('strictQuery', true);
-mg.connect("mongodb+srv://nicolas:nicolasdias123@cluster0.mpxhhxs.mongodb.net/?retryWrites=true&w=majority").then(() => console.log("Conectado no banco de dados"))
+mg.connect("Link do banco de dados MONGODB").then(() => console.log("Conectado no banco de dados"))
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
