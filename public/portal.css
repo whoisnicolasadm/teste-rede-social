@@ -1,0 +1,48 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+
+.desc {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+
+.post{
+  position: relative;
+  width: 100px;
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  background-color: rgb(139, 255, 145);
+  color: black;
+  height: 40px;
+}
+.cancel{
+  position: relative;
+  width: 100px;
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  background-color: rgb(255, 135, 135);
+  color: black;
+  height: 40px;
+}

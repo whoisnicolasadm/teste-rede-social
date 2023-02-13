@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+.button-account{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 0;
+  background-color: grey;
+}
+

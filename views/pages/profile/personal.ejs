@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../public/personal.css">
+  <title>Your profile</title>
+</head>
+<body>
+
+<div class="header">
+  <img src="<%= avatar %>" height="85" width="85" style="border-radius: 100%;" alt="Avatar">
+  <h1><%= username %></h1>
+  <p><%= followers %> followers <%= following %> following <%= posts %> posts</p>
+  <a href="/portal"><button type="button">Post</button></a>
+</div>
+<div class="video-grid">
+  <% for (var i = 0; i < videos.length; i++) { %>
+      <div class="video-thumbnail">
+          <img src="<%= videos[i].thumbnail %>">
+          <p>
+            <% if(videos[i].description.length > 30){%>
+              <b><% let shortDesc = videos[i].description.slice(0, 30) %></b>
+              <b><%= shortDesc + "..." %></b>
+              <%}else{%>
+                <b><%= videos[i].description %></b>
+                <% } %>
+            
+          </p>
+      </div>
+  <% } %>
+</div>
+</body>
+</html>

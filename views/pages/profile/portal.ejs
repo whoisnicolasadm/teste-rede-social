@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../public/portal.css">
+  <title>Portal</title>
+</head>
+<body>
+  <form class="modal-content animate" action="/portal" method="post">
+  
+    <div class="container">
+
+      <input type="text" placeholder="Titulo do video" name="title" id="title" class="title"required>
+
+      <input type="text" placeholder="Descrição do video" name="desc" id="desc" class="desc" required>
+    <div class="buttons">      
+      <button onclick="history.back()" class="cancel" name="cancelBtn" id="cancelBtn" value="cancelBtn">Cancelar</button>
+      <button type="submit" class="post" name="postBtn" id="postBtn" value="postBtn">Confirmar</button>
+    </div>
+    </div>
+</body>
+</html>
